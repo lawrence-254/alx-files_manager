@@ -1,13 +1,12 @@
-/*
- * an express module that listens to port 5000
- */
 import express from 'express';
-const app = express();
-import routes from './routes';
-const PORT = 5000;
+import startServer from './libs/boot';
+import injectRoutes from './routes';
+import injectMiddlewares from './libs/middlewares';
 
-app.use('/', routes);
+const server = express();
 
-app.listen(PORT, () => {
-  console.log(`this app listens to port ${PORT}`);
-});
+injectMiddlewares(server);
+injectRoutes(server);
+startServer(server);
+
+export default server;
