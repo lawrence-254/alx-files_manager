@@ -1,0 +1,10 @@
+{
+  "env": {
+    "node": true
+  },
+  "rules": {
+    // Other rules...
+    "no-undef": "off" // Turn off 'no-undef' rule for process
+  }
+}
+
