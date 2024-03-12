@@ -3,7 +3,7 @@
  */
 const express = require('express');
 const app = express();
-const route = require('./routes');
+const routes = require('./routes');
 const PORT = 5000;
 
 app.use('/', routes);
