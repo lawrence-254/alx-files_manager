@@ -2,10 +2,10 @@
  * A module that has controllers to redirect
  *
  */
-//const { checkRedisStatus, checkDBStatus, countUsers, countFiles } = require('../utils');
+import { checkRedisStatus, checkDBStatus, countUsers, countFiles } from '../utils';
 /* eslint-disable import/no-named-as-default */
-import redisClient from '../utils/redis';
-import dbClient from '../utils/db';
+//import { redis } from '../utils';
+//import { db } from '../utils';
 
 const AppController = {
   /*
@@ -40,4 +40,4 @@ const AppController = {
   },
 };
 
-module.exports = AppController;
+export default AppController;
