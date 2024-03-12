@@ -10,4 +10,4 @@ app.use('/', routes);
 
 app.listen(PORT, () => {
   console.log(`this app listens to port ${PORT}`);
-}
+});
