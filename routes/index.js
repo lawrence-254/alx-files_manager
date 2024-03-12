@@ -2,9 +2,9 @@
  * a controller module that contains api endpoints
  */
 
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const AppController = require('../controllers/AppController');
+import AppController from '../controllers/AppController';
 
 router.get('/status', AppController.getStatus);
 router.get('/stats', AppController.getStats);

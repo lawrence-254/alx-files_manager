@@ -1,9 +1,9 @@
 /*
  * an express module that listens to port 5000
  */
-const express = require('express');
+import express from 'express';
 const app = express();
-const routes = require('./routes');
+import routes from './routes';
 const PORT = 5000;
 
 app.use('/', routes);
